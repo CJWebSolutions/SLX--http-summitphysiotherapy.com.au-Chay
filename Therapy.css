@@ -1,0 +1,357 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*----------------------------------------------------------------
+    Font Family
+----------------------------------------------------------------*/
+
+h1, 
+h2, 
+h3, 
+h4,
+#banner p,
+.btn, 
+.formbuilder-form input#submit-form, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/*----------------------------------------------------------------
+	Branding Colour
+----------------------------------------------------------------*/
+#content ul li:before, 
+#contact ul li:before {
+    padding-right: 6px;
+    content: '\f00c';
+}
+ 
+#gallery ul li:before {
+    content: '\f111';
+    font-size:8px;
+    padding-right:5px;
+}
+
+#content h2, 
+#content h3,
+#contact h2, 
+#contact h3,
+#gallery h3,
+#content hr,
+#gallery hr{
+    color: #1e90ff;
+}
+
+#content hr,
+#gallery hr {
+    border:1px solid #1e90ff;
+}
+
+body, 
+#content ul li,
+#gallery ul li{
+    color: #222;
+}
+
+#banner h1, 
+#banner p{
+    text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
+}
+
+#services p, 
+#banner h1, 
+#banner p,  
+#contact p, 
+#contact ul li,
+.contact_detail {
+    color: #fff;
+}
+
+ #header2a:before, 
+ #header2a a,header span, 
+ #header2b a,
+ header a:hover, 
+ .formbuilder-form .row label {
+	color: #0073b9;
+}
+
+#services h3 {
+    color: #aedfff;
+}
+
+#services h3{
+    font-weight: 600;
+}
+
+ul li {
+    font-weight:100;
+    text-indent: -11px;
+    
+}
+
+.formbuilder-form .row label {
+	font-weight:400;
+}
+
+#content h3,
+#contact h3, 
+#gallery h3,
+.btn, 
+.formbuilder-form input#submit-form,
+.formbuilder-form input#submit-form:hover,
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover {
+   text-transform: uppercase;
+}
+
+#header2b a, 
+footer a:hover,
+btn, 
+.btn:hover, 
+.formbuilder-form input#submit-form,
+.formbuilder-form input#submit-form:hover, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover {
+    text-decoration: none;
+}
+    
+/*----------------------------------------------------------------
+    Form
+----------------------------------------------------------------*/
+
+.form {
+	background-color: rgb(216, 228, 242);
+}
+
+ #extraFormsContainer .modal-dialog{
+    background-color: rgb(255, 255, 255); 
+}
+
+/*----------------------------------------------------------------
+    Buttons
+----------------------------------------------------------------*/
+
+.btn {
+    border: 2px solid #FFF;
+    color: #FFF;
+    background-color: transparent;
+    width:40%;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.formbuilder-form input#submit-form, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form {
+    color:  #0073b9;
+    background: #9fceed;
+}
+
+@media (min-width: 711px) {
+    .btn:hover, 
+    .btn:focus, 
+    .btn:active, 
+    .btn.active, 
+    .open>.dropdown-toggle.btn {
+        color: #FFF;
+        font-weight:600;
+        border: 2px solid rgb(0, 114, 185);
+        background: rgba(0, 114, 185, 0.7);
+    }
+} 
+
+.formbuilder-form input#submit-form:hover, 
+#extraFormsContainer .modal-dialog .formbuilder-form input#submit-form:hover{
+    background-color: #d9d9d9;
+    color: #343434;
+}
+
+/*----------------------------------------------------------------
+    Custom Styles
+----------------------------------------------------------------*/
+
+#contact1b,
+#content2b,
+#contact2d,
+#contact2e ,
+#contact2c  {
+    display:none;
+}
+
+/*----------------------------------------------------------------
+    Header
+----------------------------------------------------------------*/
+
+#header{
+    border-bottom: 5px solid #0073b9;
+    padding: 0px;
+}
+
+#header1 img{
+    padding-top:30px;
+}
+
+#header2b {
+    font-size:21px;
+}
+
+#header2a:before{
+    content: "\f098";
+    padding-right: 5px;
+}
+
+#header2 {
+	padding-bottom:10px;
+}
+
+/*----------------------------------------------------------------
+    Banner
+----------------------------------------------------------------*/
+#banner {
+	padding-bottom:10%;
+}
+
+#banner h1 {
+    font-size: 55px;
+}
+
+.banner_cover {
+    opacity: 0.1;
+    background-color:#000;
+}
+
+/*----------------------------------------------------------------
+    Services
+----------------------------------------------------------------*/
+#services {
+	padding:0px;
+}
+
+#service1,
+#service2,
+#service3,
+#service4 {
+    transition: 0.2s 0.2s ease-out;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+#service1:hover,
+#service2:hover,
+#service3:hover,
+#service4:hover {
+    transform: scale(1.1);
+    background:#008fe2;
+}
+
+/*----------------------------------------------------------------
+    Content
+----------------------------------------------------------------*/  
+
+ul li:before {
+    position: relative;
+    left: -2px;
+}
+
+.list_half {
+    width: 48%;
+    float: right;
+    margin-right: 2%;
+    overflow: hidden;
+}
+
+.list_half .img-responsive {
+	width: 100%;
+}
+
+#gallery .list_half {
+    transition: 0.2s 0.2s ease-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#gallery .list_half:hover {
+   transform: scale(1.1);
+    background:#008fe2;
+}
+
+#contact iframe,
+#gallery img {
+	border-radius:7px;
+}
+
+#contact iframe {
+	height: 186px;
+}
+/*----------------------------------------------------------------
+    Footer
+----------------------------------------------------------------*/
+footer *, 
+footer a , 
+footer {
+    color: #5c5c5c;
+}
+footer {
+    background-color: #dfdfdf;
+    padding: 25px 0 25px;
+}
+
+/*----------------------------------------------------------------
+    Media Queries
+----------------------------------------------------------------*/
+@media only screen and (max-width: 767px) and (min-width: 0px)  {  
+    .btn{
+        white-space:normal;
+    }
+    #header {
+    	padding-bottom:25px;
+   	}
+    #header1 img{
+    	margin-bottom:-5px;
+    }
+    #header2b {
+    	    	line-height:10px;
+    }
+    #banner h1 {
+    	font-size:45px;
+    }
+    #service1:hover,
+    #service2:hover,
+    #service3:hover,
+    #service4:hover{
+    	transform: scale(1.0);
+    }
+    #service1,
+	#service2,
+	#service3,
+	#service4 {
+		padding-top:40px;
+		padding-bottom:0px;
+	}
+	#services {
+		padding-bottom:20px;
+	}
+	#gallery img {
+		padding-top:10px;
+	}
+}
+@media (max-width: 450px) {
+	.list_half {
+    	float: none;
+    	margin: 0 auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.btn{
+		width:100%;
+		word-wrap: break-word;
+	}
+}
+@media (min-width: 0px) {
+	.btn {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 767px) {
+	#service3 {
+		clear:left;
+	}
+} 
